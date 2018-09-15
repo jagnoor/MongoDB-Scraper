@@ -1,0 +1,8 @@
+.modal-body,
+.mod{
+  background-color: rgb(204, 204, 204)
+}
+textarea:focus{
+  border: none;
+  outline: none
+}

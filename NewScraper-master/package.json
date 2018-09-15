@@ -1,0 +1,29 @@
+{
+  "name": "NewScraper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EwilsonS/NewScraper.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EwilsonS/NewScraper/issues"
+  },
+  "homepage": "https://github.com/EwilsonS/NewScraper#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "mongoose": "^5.2.14",
+    "morgan": "^1.9.1",
+    "request": "^2.88.0"
+  }
+}
