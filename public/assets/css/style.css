@@ -1,9 +1,13 @@
 body{
-  background-color: black
+  background-color: black;
+  align-content: center;
+  align-items: center;
 }
 .jumbotron{
   background-color: black;
   color: white;
+  align-content: center;
+  align-items: center;
 }
 textarea:focus{
   border: none;
