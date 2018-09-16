@@ -14,8 +14,7 @@ $(document).ready(function () {
       .then(function (data) {
         if (data && data.length) {
           renderArticles(data);
-        }
-        else {
+        } else {
           renderEmpty();
         }
       });
@@ -85,8 +84,7 @@ $(document).ready(function () {
         "</li>"
       ].join("");
       notesToRender.push(currentNote);
-    }
-    else {
+    } else {
       for (var i = 0; i < data.notes.length; i++) {
         currentNote = $([
           "<li class='list-group-item note mb-3'>",
@@ -105,9 +103,9 @@ $(document).ready(function () {
   function handleArticleDelete() {
     var articleToDelete = $(this).parents(".card").data();
     $.ajax({
-      method: "DELETE",
-      url: "/api/headlines/" + articleToDelete._id
-    })
+        method: "DELETE",
+        url: "/api/headlines/" + articleToDelete._id
+      })
       .then(function (data) {
         if (data.ok) {
           initPage();
@@ -146,7 +144,7 @@ $(document).ready(function () {
     })
   }
 
-  function handleNoteSave (){
+  function handleNoteSave() {
     var noteData;
     var newNote = $(".bootbox-body textarea").val().trim();
 
@@ -161,14 +159,15 @@ $(document).ready(function () {
         })
     }
   }
-  function handleNoteDelete () {
+
+  function handleNoteDelete() {
     var noteToDelete = $(this).data("_id");
 
     $.ajax({
-      url: "/api/notes/" + noteToDelete,
-      method: "DELETE"
-    })
-      .then(function() {
+        url: "/api/notes/" + noteToDelete,
+        method: "DELETE"
+      })
+      .then(function () {
         bootbox.hideAll()
       });
   }

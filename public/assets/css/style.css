@@ -1,6 +1,9 @@
-.modal-body,
-.mod{
-  background-color: rgb(204, 204, 204)
+body{
+  background-color: black
+}
+.jumbotron{
+  background-color: black;
+  color: white;
 }
 textarea:focus{
   border: none;
